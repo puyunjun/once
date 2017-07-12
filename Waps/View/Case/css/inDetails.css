@@ -1,0 +1,34 @@
+.topContent{
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.topBcg{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.topBcg img{
+  width: 100%;
+  height: 100%;
+}
+.topContent p{
+  color: #fff;
+  text-align: justify;
+}
+.topContent .first-title{
+  padding-right: 0;
+  margin-bottom: 10px;
+}
+.topContent .first-title .title-info{
+  color: #fff;
+  font-size: 16px;
+}
+.first-content>p{
+  text-indent: 2em; 
+  font-size:12px;
+}
+.content-bottom p{
+  margin-bottom: 0;
+  font-size:12px;
+}

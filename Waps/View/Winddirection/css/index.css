@@ -1,0 +1,76 @@
+﻿.topBanner img{
+	width: 100%;
+}
+.partList{
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+.caseList .nav-tabs>li.active a{
+	border: none;
+color: #f6733f;
+}
+.caseList .nav-tabs>li>a{
+	border: none;
+	font-weight: bold;
+	color: #000;
+}
+.aStyle{
+	color: #f6733f;
+}
+.caseList .nav-tabs{
+	border: none;
+}
+.caseList .nav-tabs>li{
+	width: 25%;
+	text-align: center;
+}
+.caseList .nav>li>a{
+	padding: 10px 0;
+}
+.leftWords{
+	text-align: center;
+	letter-spacing: 4px;
+	font-weight: bolder;
+}
+.listNum{
+	margin-bottom: 14px;
+}
+.listImg{
+	padding-right: 5px;
+}
+.listImg img{
+	width: 100%;
+}
+.allList{
+	padding-left: 0;
+}
+.listTime{
+	line-height: 20px;
+	color: #beb5b5;
+	font-weight: bolder;
+}
+.listTitle{
+	margin: 2px 0;
+}
+.listTitle, .listContent{
+	font-size: 12px;
+}
+.listContent p{
+	text-align: justify;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box; /** 将对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2; /** 显示的行数 **/
+    overflow: hidden;  /** 隐藏超出的内容 **/
+}
+.allList>a{
+	padding: 3px 10px;
+	font-size: 12px;
+	text-decoration: none;
+	border: 1px solid #f6733f;
+	border-radius: 5px;
+}
+.aActive{
+	color: #f6733f !important;
+}

@@ -1,0 +1,115 @@
+.logoImg{
+	width: 100%;
+}
+.downRound{
+	bottom: -8px;
+}
+.leftBtn{
+	position: absolute;
+	top: 50%;
+	left: 15px;
+	margin-top: -15px;
+}
+.rightBtn{
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	margin-top: -15px;
+}
+.aboutMe{
+	border-bottom: 1px solid #969696;
+	padding-bottom: 10px;
+}
+.titleName{
+	margin-top: 14px;
+	text-align: center;
+}
+.titleName b, .titleName .nameWords{
+	font-size: 16px;
+}
+.titleName b{
+	letter-spacing: 2px;
+	font-family: Ootf;
+}
+.titleName .lines{
+	height: 6px;
+	width: 30px;
+	border-bottom: 2px solid #000;
+	margin: auto;
+	margin-bottom: 5px;
+}
+.aboutCon{
+	padding-top: 10px;
+	text-indent:2em;
+	text-align: justify;
+}
+.moreBtn{
+	text-align: center;
+}
+.moreInformation{
+	border: 1px solid #f6733f;
+	color: #f6733f;
+	margin:auto;
+	padding: 3px 12px;
+	font-size: 12px;
+	margin: 5px 0;
+}
+.caseList{
+	padding: 1px 1px;
+	height: 88px;
+}
+.caseList a{
+	text-decoration: none;
+}
+.caseList a img{
+	width: 100%;
+	height: 100%;
+}
+.caseCon{
+	padding: 10px 15px;
+}
+.serviceCon{
+	padding: 10px 15px;
+}
+.serviceList{
+	padding:0 5px;
+	margin-bottom: 14px;
+	border-bottom: 1px solid #969696;
+}
+.serviceList u{
+	text-decoration: none;
+}
+.serviceUl{
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+.serviceUl li{
+	margin-right: 15px;
+	float: left;
+}
+.liFirst span{
+	font-weight: bolder;
+	color: #f6733f;
+	font-size: 12px;
+	letter-spacing: 2px;
+}
+.liFirst p{
+	margin-bottom: 10px;
+}
+.serviceUl li a{
+	color: #000;
+	font-size: 12px;
+	text-decoration: none;
+}
+.active{
+	color: #f6733f;
+}
+.downRound li{
+	width:4px;
+	height:4px;
+}
+.carousel-indicators .active{
+	width:6px;
+	height:6px;
+}

@@ -1,0 +1,52 @@
+﻿<include file="Layouts/header" />
+<!-- 当前页面 css -->
+<link rel="stylesheet" href="/Apps/Wap/View/Winddirection/css/index.css">
+
+<!-- 内容主体start -->
+<div class="row topBanner">
+    <img src="{$topimg.topurl}">
+</div>
+<!-- 切换start -->
+<div class="row partList">
+    <div class="col-xs-12">
+        <div class="caseList">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active" ><a href="__ROOT__/Winddirection/index">ALL</a></li>
+                <foreach name="class" item="v">
+                    <li role="presentation" ><a href="__ROOT__/Winddirection/classify/id/{$v.id}">{$v.cname}</a></li>
+                </foreach>
+		
+		
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <!-- 全部风象循环start -->
+                    <foreach name="info" item="v">
+                        <div class="row listNum">
+                            <div class="col-xs-4 listImg">
+                                <img src="{$v.imgulr}">
+                            </div>
+                            <div class="col-xs-8 allList">
+                                <div class="listTime">{$v.ctime}</div>
+                                <div class="listTitle">{$v.title}</div>
+                                <div class="listContent">
+                                    {$v.content}
+                                </div>
+                                <a href="/Wap/Winddirection/inDetails/id/{$v.id}" class="moreMsg">详细信息>></a>
+                            </div>
+                        </div>
+                    </foreach>
+                    <!-- 全部风象循环end -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 切换end -->
+<!-- 内容主体end -->
+
+<include file="Layouts/footer" />
+<!-- 当前页面js -->
+<script type="text/javascript" src="/Apps/Wap/View/Winddirection/js/index.js"></script>

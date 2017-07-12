@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>迹象视觉文化传媒</title>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="/Apps/Wap/View/Layouts/css/bootstrap.min.css">
+    <!-- 底部菜单css -->
+    <link rel="stylesheet" type="text/css" href="/Apps/Wap/View/Layouts/css/common.css">
+    <!-- 字体图标 -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- 阿里icon -->
+    <style type="text/css">
+      .icon {
+         width: 1.5em; height: 1.5em;
+         vertical-align: -0.15em;
+         fill: currentColor;
+         overflow: hidden;
+      }
+      @font-face {
+         font-family: hyz;
+         src: url('/Public/font/hyz.eot');
+         src: local('hyz Regular'),
+                local('hyz'),
+                url('/Public/font/hyz.woff') format('woff'),
+                url('/Public/font/hyz.ttf') format('truetype'),
+                url('/Public/font/hyz.svg#hyz') format('svg');
+        }
+      @font-face {
+         font-family: Ootf;
+         src: url('/Public/font/OratorStd.eot');
+         src: local('Ootf Regular'),
+                local('Ootf'),
+                url('/Public/font/OratorStd.woff') format('woff'),
+                url('/Public/font/OratorStd.ttf') format('truetype'),
+                url('/Public/font/OratorStd.svg#Ootf') format('svg');
+        }
+      .navColor{
+
+         color: #f77b4c!important;
+      }
+    </style>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+  
+  <div class="container-fluid allContent">
+    <!-- 公共菜单 start-->
+      <div class="row downMenu">
+        <div class="col-xs-3 topLogo">
+          <img src="{$foot.logourl}">
+        </div>
+        <div class="col-xs-9" style="padding-left: 0;">
+          <ul class="nav nav-pills">
+            <li role="presentation">
+              <a href="/Wap/Index/index" <eq name="Index" value="1">class="navColor"</eq> >首页</a>
+            </li>
+            <li role="presentation">
+              <a href="/Wap/Indication/index" <eq name="Indication" value="1">class="navColor"</eq>>迹象</a>
+            </li>
+            <li role="presentation">
+              <a href="/Wap/Case/index"  <eq name="Case" value="1">class="navColor"</eq>>案例</a>
+            </li>
+            <li role="presentation">
+              <a href="/Wap/Winddirection/index"  <eq name="Winddirection" value="1">class="navColor"</eq>>风象</a>
+            </li>
+            <li role="presentation">
+              <a href="/Wap/Join/index"  <eq name="Join" value="1">class="navColor"</eq>>加入</a>
+            </li>
+            <li role="presentation">
+              <a href="/Wap/Contact/index"  <eq name="Contact" value="1">class="navColor"</eq>>联系</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <!-- 公共菜单 end-->
+    

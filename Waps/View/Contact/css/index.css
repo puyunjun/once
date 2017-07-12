@@ -1,0 +1,31 @@
+.topBanner img{
+	width: 100%;
+}
+.second-box{
+	margin-top: 14px;
+}
+.second-box-item{
+	text-align: center;
+}
+.second-en{
+	letter-spacing: 3px;
+	line-height: 24px;
+	font-size: 16px;
+	font-weight: bold;
+}
+.second-title{
+	font-size: 16px;
+	font-weight: bold;
+}
+.mapBox{
+	margin-top: 14px;
+}
+.contactMsg{
+	margin-top: 14px;
+}
+.contactMsg ul li{
+	line-height: 24px;
+}
+.companyName{
+	margin-bottom: 8px;
+}

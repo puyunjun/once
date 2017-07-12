@@ -1,0 +1,186 @@
+﻿<include file="Layouts/header" />
+
+<!-- 当前页面 css -->
+<link rel="stylesheet" href="/Apps/Wap/View/Index/css/index.css">
+
+	<!-- 内容主体 start-->
+	<!-- 轮播 start-->
+	<div class="row">
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators downRound">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+		    <div class="item active">
+				<a href="__ROOT__/Indication/index"> <img class="index-banner"  src="{$first.imgurl}" alt="..." ></a>
+				<div class="carousel-caption banner-text">
+					<h3 class="text-up">{$first.title}</h3>
+					<p class="text-below">{$first.slogan}</p>
+				</div>
+		    </div>
+
+			  <foreach name="banner" item="v" key="k">
+				  <div class="item">
+					  <a href="__ROOT__/Case/inDetails/id/{$v.id}"><img class="index-banner" src="{$v.imgurl}"alt="..."></a>
+				  </div>
+			  </foreach>
+		  </div>
+
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+		    <span class="leftBtn" aria-hidden="true">
+		    	<svg class="icon categorie-icon" aria-hidden="true">
+                    <use xlink:href="#icon-houdongfangiconfont23"></use>
+                </svg>
+		   	</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+		    <span class="rightBtn" aria-hidden="true">
+				<svg class="icon categorie-icon" aria-hidden="true">
+                    <use xlink:href="#icon-houdongfangiconfont24"></use>
+                </svg>
+            </span>
+		  </a>
+		</div>
+	</div>
+	<!-- 轮播 end-->
+	<!-- 关于迹象start -->
+	<div class="row aboutMe">
+		<div class="col-xs-12 titleName">
+			<div class="row">
+				<b>ABOUT SIGNATURE</b>
+			</div>
+			<div class="row">
+				<div class="lines"></div>
+			</div>
+			<div class="row">
+				<span class="nameWords">关于迹象</span>
+			</div>
+		</div>
+		<div class="col-xs-12 aboutCon">
+			<foreach name="about" item="v">
+				{$v.about}
+			</foreach>
+		</div>
+		<div class="col-xs-12 moreBtn">
+			<a class="btn btn-default moreInformation" href="/Wap/Indication/index" role="button">了解更多信息>></a>
+		</div>
+	</div>
+	<!-- 关于迹象end -->
+	<!-- 最新案例start -->
+	<div class="row newCase">
+		<div class="col-xs-12 titleName">
+			<div class="row">
+				<b>NEW PROJECTS</b>
+			</div>
+			<div class="row">
+				<div class="lines"></div>
+			</div>
+			<div class="row">
+				<span class="nameWords">最新案例</span>
+			</div>
+		</div>
+		<div class="col-xs-12 caseCon">
+			<!-- 案例循环start -->
+				<foreach name="caseCover" item="v">
+					<div class="col-xs-4 caseList">
+						<a href="/Wap/Case/inDetails/id/{$v.id}"><img src="{$v.path}"></a>
+					</div>
+				</foreach>
+			<!-- 案例循环end -->
+		</div>
+		<div class="col-xs-12 moreBtn">
+			<a class="btn btn-default moreInformation" href="/Wap/Case/index" role="button">了解更多案例>></a>
+		</div>
+	</div>
+	<!-- 最新案例end -->
+	<!-- 迹象服务start -->
+	<div class="row ourService">
+		<div class="col-xs-12 titleName">
+			<div class="row">
+				<b>OUR SERVICE</b>
+			</div>
+			<div class="row">
+				<div class="lines"></div>
+			</div>
+			<div class="row">
+				<span class="nameWords">迹象服务</span>
+			</div>
+		</div>
+		<div class="col-xs-12 serviceCon">
+			<div class="col-xs-12 serviceList">
+				<div class="row">
+					<div class="col-xs-12 liFirst">
+						<span>Brand Plan</span>
+						<p>品牌策划</p>
+					</div>
+				</div>
+				<ul class="serviceUl">
+					<li><a href="/Wap/Case/index">品牌定位</a></li>
+					<li><a href="/Wap/Case/index">品牌理念与文化</a></li>
+					<li><a href="/Wap/Case/index">品牌故事</a></li>
+					<li><a href="/Wap/Case/index">品牌命名</a></li>
+					<li><a href="/Wap/Case/index">品牌口号</a></li>
+					<li><a href="/Wap/Case/index">品牌全案策划</a></li>
+					<li><a href="/Wap/Case/index">品牌基因创建</a></li>
+				</ul>
+				<div style="clear: both;"></div>
+				<u>-</u>
+			</div>
+			<div class="col-xs-12 serviceList">
+				<div class="row">
+					<div class="col-xs-12 liFirst">
+						<span>Brand Design</span>
+						<p>品牌形象策划</p>
+					</div>
+				</div>
+				<ul class="serviceUl">
+					<li><a href="/Wap/Case/index">品牌VIS设计</a></li>
+					<li><a href="/Wap/Case/index">品牌改造设计</a></li>
+					<li><a href="/Wap/Case/index">品牌网站设计</a></li>
+					<li><a href="/Wap/Case/index">包装设计</a></li>
+					<li><a href="/Wap/Case/index">画册设计</a></li>
+					<li><a href="/Wap/Case/index">宣传物料设计</a></li>
+					<li><a href="/Wap/Case/index">海报设计</a></li>
+				</ul>
+				<div style="clear: both;"></div>
+				<u>-</u>
+			</div>
+			<div class="col-xs-12 serviceList">
+				<div class="row">
+					<div class="col-xs-12 liFirst">
+						<span>Brand Experience</span>
+						<p>品牌体验</p>
+					</div>
+				</div>
+				<ul class="serviceUl">
+					<li><a href="/Wap/Case/index">短片及摄影</a></li>
+					<li><a href="/Wap/Case/index">艺术指导</a></li>
+					<li><a href="/Wap/Case/index">办公空间设计</a></li>
+					<li><a href="/Wap/Case/index">环境导视系统设计</a></li>
+				</ul>
+				<div style="clear: both;"></div>
+				<u>-</u>
+			</div>
+		</div>
+	</div>
+	<!-- 迹象服务end -->
+    <!-- 内容主体 end-->
+
+<include file="Layouts/footer" />
+<!-- 当前页面js -->
+<script type="text/javascript" src="/Apps/Wap/View/Index/js/index.js"></script>
+<script type="text/javascript">
+  
+  $(".aboutCon p").each(function(){
+     var xx=$(this).html();
+     $(this).replaceWith(xx);
+  })
+</script>

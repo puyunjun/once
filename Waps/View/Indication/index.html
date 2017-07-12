@@ -1,0 +1,59 @@
+﻿<include file="Layouts/header" />
+<!-- 当前页面 css -->
+<link rel="stylesheet" href="/Apps/Wap/View/Indication/css/index.css">
+
+
+	<!-- 内容主体start -->
+	<div class="row topBanner">
+		<img src="{$arrInfo.topurl}">
+	</div>
+	<!-- 关于迹象start -->
+	<div class="row partList">
+		<div class="col-xs-12 titleWords">
+			<b>关于迹象</b>
+		</div>
+		<div class="col-xs-12 theCon">
+			{$arrInfo.about}
+		</div>
+	</div>
+	<!-- 关于迹象end -->
+	<div class="row topBanner">
+		<img src="{$arrInfo.centerurl}">
+	</div>
+	<!-- 定位理念start -->
+	<div class="row partList">
+		<div class="col-xs-12 titleWords">
+			<b>定位理念</b>
+		</div>
+		<div class="col-xs-12 positionCon">
+			{$arrInfo.idea}
+			<p>-</p>
+		</div>
+	</div>
+	<!-- 定位理念end -->
+	<!-- 品牌观点start -->
+	<div class="row partList">
+		<div class="col-xs-12 titleWords">
+			<b>品牌观点</b>
+		</div>
+		<div class="col-xs-12 leftCon pinpai">
+			{$arrInfo.viewpoint}
+			<br />
+			<p style="text-indent: 0;">-</p>
+		</div>
+		<div class="col-xs-6 col-xs-offset-3 rightCon">
+			<img src="{$arrInfo.viewpointurl}">
+		</div>
+	</div>
+	<!-- 品牌观点end -->
+	<!-- 内容主体end -->
+
+
+<include file="Layouts/footer" />
+<script type="text/javascript">
+  
+  $(".pinpai p").each(function(){
+     var xx=$(this).html();
+     $(this).replaceWith(xx);
+  })
+</script>

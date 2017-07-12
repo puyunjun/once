@@ -1,0 +1,33 @@
+.topBanner img{
+	width: 100%;
+}
+.partList{
+	margin: 10px -15px;
+}
+.titleWords b{
+	line-height: 40px;
+	font-size: 16px;
+	letter-spacing: 2px;
+}
+.theCon p{
+	text-align: justify;
+	text-indent: 2em;
+}
+.positionCon p{
+	margin-bottom: 0;
+	text-align: justify;
+}
+.leftCon{
+	margin-bottom: 0;
+	text-align: justify;
+	text-indent: 2em;
+}
+.rightCon{
+	padding-left: 0;
+}
+.rightCon img{
+	width: 100%;
+}
+.pinpai p{
+	display:inline-block;
+}

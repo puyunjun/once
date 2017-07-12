@@ -1,0 +1,64 @@
+<include file="Layouts/header" />
+<!-- 当前页面 css -->
+<link rel="stylesheet" href="/Apps/Wap/View/Join/css/index.css">
+
+	<!-- 内容主体start -->
+	<div class="row topBanner">
+		<img src="{$topimg.topurl}">
+	</div>
+	<div class="row second-box">
+      <div class="col-xs-12">
+        <div class="second-box-title">寻找有"想象"的人</div>
+        <div class="second-box-content">
+			{$topimg.seek}
+        </div>
+        <div class="second-box-hr"></div>
+      </div>
+    </div>
+    <!-- 招聘信息start -->
+    <div class="row thirdly-box">
+      <div class="col-xs-12 thirdly-box-item">
+        <!-- Contenedor start -->
+        <ul id="accordion" class="accordion">
+            <!-- 循环start -->
+			<foreach name="arr" item="v">
+            <div class="col-xs-12 accordion-li">
+	            <li>
+	              <div class="link">
+	                <div class="link-title">{$v.zhname}</div>
+	                <div class="link-en">{$v.enname}</div>
+	                <div class="link-info">部门：{$v.department}  招聘人数：<span class="link-info-nop">{$v.nop}</span></div>
+	                <i class="fa fa-angle-down fa-2x"></i>
+	              </div>
+	              <ul class="submenu">
+	                <li>
+	                  <div class="submenu-content">
+	                　　{$v.content}
+	                  </div>
+	                </li>
+	              </ul>
+	            </li>
+            </div>
+            <!-- 循环end -->
+				</foreach>
+
+        </ul>
+        <!-- Contenedor start -->
+      </div>
+    </div>
+    <!-- 招聘信息end -->
+    <!-- 应聘流程及须知start -->
+    <div class="row fourthly-box">
+      <div class="col-xs-12 fourthly-box-item">
+        <div class="fourthly-title">*应聘流程及需知</div>
+        <div class="fourthly-content">
+			{$topimg.applyingflow}
+        </div>
+      </div>
+    </div>
+    <!-- 应聘流程及须知end -->
+	<!-- 内容主体end -->
+
+<include file="Layouts/footer" />
+<!-- 当前页面 js -->
+<script src="/Apps/Wap/View/Join/js/index.js"></script>

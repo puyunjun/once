@@ -1,0 +1,35 @@
+<include file="Layouts/header" />
+<!-- 引入当前页面 css -->
+<link rel="stylesheet" href="/Apps/Wap/View/Case/css/inDetails.css">
+
+
+  <!-- 页面主体 start -->
+  <!-- 第一部分 start -->
+    <div class="row topContent">
+      <div class="topBcg">
+        <img  src="{$info.bg}" class="img-responsive first-bg" alt="Responsive image">
+      </div>
+      <div class="col-xs-12 first-title">
+        <span class="title-info">{$info.title}</span>
+      </div>
+      <div class="col-xs-12 first-content">
+        {$info.presentation}
+        <div class="content-bottom">
+          <p>客户名称：{$info.cname}</p>
+          <p>服务内容：{$info.scontent}</p>
+          <p>创作日期：{$info.cdate}</p>
+        </div>
+      </div>
+    </div>
+    <!-- 第一部分 end -->
+    <!-- 第二部分 start -->
+    <div class="row second-box">
+      <div class="col-xs-12">
+        <img class="img-responsive" src="{$info.ccontent}">
+      </div>
+    </div>
+    <!-- 第二部分 end -->
+  <!-- 页面主体 end -->
+<include file="Layouts/footer" />
+<!-- 当前页面js-->
+<script type="text/javascript" src="/Apps/Wap/View/Case/js/inDetails.js"></script>

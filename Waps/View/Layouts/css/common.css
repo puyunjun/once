@@ -1,0 +1,126 @@
+body{
+	font-family: "Microsoft YaHei"!important;
+}
+.allContent{
+	padding-top: 40px;
+	position: relative;
+}
+.downMenu{
+	background-color: #fff;
+	width: 100%;
+	height: 40px;
+	margin: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index:999;
+}
+.topLogo{
+	height: 100%;
+}
+.downMenu .topLogo img{
+	height: 80%;
+	margin-top: 7%;
+}
+.downMenu .nav-pills li{
+	width: 16.6666%;
+	margin-left: 0;
+	text-align: center;
+}
+.jishu{
+	text-align:center;
+	font-size:13px;
+}
+.jishu p{
+	margin-bottom:0;
+	color:#8d8d8f;
+}
+.downMenu .nav-pills li a{
+	width: 100%;
+	padding: 0;
+	line-height: 40px;
+	text-align: center;
+	color: #000;
+	text-decoration: none;
+}
+.downMenu .nav-pills li .icon{
+	width: 1.5em;
+	height: 1.5em;
+}
+.active a{
+	background-color: none;
+	color: #f77b4c;
+}
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color: none;
+}
+.downMenu .nav{
+	padding-top: 1px;
+}
+.headBtn{
+	background: none;
+	border: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 44px;
+}
+h3{
+	font-size: 18px;
+	line-height: 44px;
+	text-align: center;
+	margin: 0;
+	color: #fff;
+}
+.returnBtn{
+	color: #fff;
+}
+.downContent{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #2e2d2d;
+	width: 100%;
+	margin: 0;
+	padding: 10px 15px;
+}
+.downContent img{
+	width: 100%;
+}
+.downContent>div{
+	padding: 0 5px;
+}
+.downContent .addressMsg p{
+	text-align:justify;
+}
+.downContent .QRcode{
+	text-align: center;
+}
+.downContent .QRcode p{
+	color: #8d8d8f;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.addressMsg img{
+	width: 30%;
+	margin-bottom:10px;
+}
+.addressMsg p{
+	color: #8d8d8f;
+	font-size: 12px;
+	margin-bottom: 0px;
+}
+.copyRight{
+	margin-top: 5px;
+}
+.copyRight p{
+	color: #8d8d8f;
+	font-size: 12px;
+	margin-bottom: 0;
+}
+.downjx{
+	width:auto;
+	float:right;
+}
+
+

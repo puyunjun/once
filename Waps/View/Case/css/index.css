@@ -1,0 +1,38 @@
+.topBanner img{
+	width: 100%;
+}
+.partList{
+	margin-top: 14px;
+	margin-bottom: 14px;
+}
+.caseList .nav-tabs>li.active>a{
+	border: none;
+	color: #f6733f;
+}
+.caseList .nav-tabs>li>a{
+	border: none;
+	font-weight: bold;
+	color: #000;
+}
+.caseList .nav-tabs{
+	border: none;
+}
+.caseList .nav-tabs>li{
+	width: 25%;
+	text-align: center;
+}
+.caseList .nav>li>a{
+	padding: 10px 0px;
+}
+.leftWords{
+	text-align: center;
+	letter-spacing: 4px;
+	font-weight: bolder;
+}
+.caseImg{
+	margin-bottom: 1px;
+	padding: 0 1px;
+}
+.caseImg img{
+	width: 100%;
+}

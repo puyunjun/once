@@ -1,0 +1,69 @@
+﻿<include file="Layouts/header" />
+<!-- 当前页面 css -->
+<link rel="stylesheet" href="/Apps/Wap/View/Case/css/index.css">
+	
+	<!-- 内容主体start -->
+	<div class="row topBanner">
+		<img src="{$top.topurl}" alt="Responsive image">
+	</div>
+	<!-- 切换start -->
+	<div class="row partList">
+		<div class="col-xs-12">
+			<div class="caseList">
+			  <!-- Nav tabs -->
+			  <ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">ALL</a></li>
+
+				  <foreach name="caseClass" item="v">
+					<!--  <li class="see-ul-item"><a href="__ROOT__/Case/classify/id/{$v.id}">{$v.cname}</a></li>-->
+					  <li role="presentation"><a value="{$v.id}" onclick="javascript:selType(this.getAttribute('value'))" href="#profile" aria-controls="profile" role="tab" data-toggle="tab">{$v.cname}</a></li>
+				  </foreach>
+				</ul>
+			  <!-- Tab panes -->
+			  <div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="home">
+			    	<!-- 全部案例循环start -->
+					<foreach name="caseCover" item="v">
+					<div class="col-xs-4 caseImg">
+						<a href="/Wap/Case/inDetails/id/{$v.id}"><img src="{$v.path}"></a>
+					</div>
+					</foreach>
+			    	<!-- 全部案例循环end -->
+			    </div>
+			    <div role="tabpanel" class="tab-pane" id="profile" class="coverClass">
+			    	<!-- 品牌策划案例循环start -->
+						<div class="col-xs-4 caseImg">
+							<a href="/Wap/Case/inDetails"><img src="{$vo.path}"></a>
+						</div>
+			    	<!-- 品牌策划案例循环end -->
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<!-- 切换end -->
+	<!-- 内容主体end -->
+
+<include file="Layouts/footer" />
+<script>
+	function selType(id){
+		$(function(){
+			$.ajax({
+				url:'__ROOT__/Case/classify',
+				data:'id='+id,
+				dataType:'json',
+				type:'post',
+				success:function(re){
+					var needClass="";
+					for(var i=0;i<re.length;i++){
+		needClass+="<div class='col-xs-4 caseImg'>" +
+					"<a href='/Wap/Case/inDetails/id/"+re[i].id+"'><img src='"+
+					re[i].path+"'></a></div>"
+					}
+					$("#profile").html(needClass);
+				}
+			})
+		})
+	}
+
+</script>
